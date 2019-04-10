@@ -23,3 +23,4 @@ def twoSum(nums, target):
                 pass
             else nums(indice) + nums(second_indice) == target:
                 return [indice, second_indice] 
+    return False
