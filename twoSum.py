@@ -18,18 +18,10 @@ example_nums = [2, 7, 11, 15]
 def twoSum(nums, target):
     """ returns the two indices which sum to target """
     for indice in range(0, len(nums)):
-        print(f"The indice is {indice}, value {nums[indice]}.")
         for second_indice in range(0, len(nums)):
-            print(f"The second_indice is {second_indice}, the value is {nums[second_indice]}. Value of first is {nums[indice]}, second is {nums[second_indice]}.")
             if indice == second_indice:
-                print("it will pass")
                 pass
             else:
                 if nums[indice] + nums[second_indice] == target:
-                    print("will return true")
-                    print(f"The indice is {indice} with a value of {nums[indice]} & second_indice is {second_indice} with a value of {nums[second_indice]}.")
                     return [indice, second_indice] 
-    print("False")
     return False
-
-twoSum(example_nums, 9)
