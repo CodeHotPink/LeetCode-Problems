@@ -22,5 +22,8 @@ def twoSum(nums, target):
             if indice == second_indice:
                 pass
             else nums(indice) + nums(second_indice) == target:
+                print(f"The indice is {indice} with a value of {nums[indice]} & second_indice is {second_indice} with a value of {nums[second_indice]}.")
                 return [indice, second_indice] 
-    return False
+        print("False")
+        return False
+
