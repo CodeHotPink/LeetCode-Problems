@@ -12,3 +12,14 @@ Given nums = [2, 7, 11, 15], target = 9,
 Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1].
 """
+
+example_nums = [2, 7, 11, 15]
+
+def twoSum(nums, target):
+    """ returns the two indices which sum to target """
+    for indice in range(0, len(nums)+1):
+        for second_indice in range(0, len(nums)+1):
+            if indice == second_indice:
+                pass
+            else nums(indice) + nums(second_indice) == target:
+                return [indice, second_indice] 
