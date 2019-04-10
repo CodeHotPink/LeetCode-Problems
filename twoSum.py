@@ -27,3 +27,4 @@ def twoSum(nums, target):
         print("False")
         return False
 
+twoSum(example_nums, 9)
