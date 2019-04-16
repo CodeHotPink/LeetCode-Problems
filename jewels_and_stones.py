@@ -20,5 +20,9 @@ The characters in J are distinct.
 def num_jewels_in_stones(jewels, stones):
     """ Takes in jewel indentifier(s) & list of stones. Returns integer of how many jewels are in the stones. """
     stones_dictionary = {}
+    num_of_jewels = 0
     for stone in stones:
         stones_dictionary[stone] += stones_dictionary.get(stone, 1)
+    for jewel in jewels:
+        num_of_jewels += stones_dictionary.get(stones_dictionary[jewel],0)
+        
