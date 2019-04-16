@@ -25,9 +25,9 @@ def num_jewels_in_stones(jewels, stones):
     stones_dictionary = {}
     num_of_jewels = 0
     for stone in stones:
-        stones_dictionary[stone] += stones_dictionary.get(stone, 1)
+        stones_dictionary[stone] = stones_dictionary.get(stone, 0)+1
     for jewel in jewels:
-        num_of_jewels += stones_dictionary.get(stones_dictionary[jewel],0)
+        num_of_jewels += stones_dictionary.get(jewel,0)
     return num_of_jewels
         
 num_jewels_in_stones(J,S)
