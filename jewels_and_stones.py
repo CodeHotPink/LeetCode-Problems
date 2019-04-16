@@ -17,6 +17,9 @@ S and J will consist of letters and have length at most 50.
 The characters in J are distinct.
 """
 
+J = "aA"
+S = "aAAbbbb"
+
 def num_jewels_in_stones(jewels, stones):
     """ Takes in jewel indentifier(s) & list of stones. Returns integer of how many jewels are in the stones. """
     stones_dictionary = {}
@@ -25,4 +28,6 @@ def num_jewels_in_stones(jewels, stones):
         stones_dictionary[stone] += stones_dictionary.get(stone, 1)
     for jewel in jewels:
         num_of_jewels += stones_dictionary.get(stones_dictionary[jewel],0)
+    return num_of_jewels
         
+num_jewels_in_stones(J,S)
